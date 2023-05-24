@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9489b35973c81e5b06ff44b35e1bdd9",
+    "content-hash": "31344202322b5998988aeb36e5f55b53",
     "packages": [
         {
             "name": "brick/math",
@@ -1645,17 +1645,17 @@
         },
         {
             "name": "laravel/nova",
-            "version": "4.23.0",
+            "version": "4.24.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:laravel/nova.git",
-                "reference": "6a14d83663f0484889a7f73ffaed7262bba7a26a"
+                "reference": "124f76041caf86aacf0fe344a9f5782562c1cda7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://nova.laravel.com/dist/laravel/nova/laravel-nova-6a14d83663f0484889a7f73ffaed7262bba7a26a-zip-1df780.zip",
-                "reference": "6a14d83663f0484889a7f73ffaed7262bba7a26a",
-                "shasum": "fd7c3f363f0a6f28c7aaac5cf5ea06193d8be9aa"
+                "url": "https://nova.laravel.com/dist/laravel/nova/laravel-nova-124f76041caf86aacf0fe344a9f5782562c1cda7-zip-780fa8.zip",
+                "reference": "124f76041caf86aacf0fe344a9f5782562c1cda7",
+                "shasum": "966349c729140dcbaf3035534b974e08795d118f"
             },
             "require": {
                 "brick/money": "^0.5.0|^0.6.0|^0.7.0|^0.8.0",
@@ -1680,7 +1680,7 @@
                 "mockery/mockery": "^1.4.4",
                 "nunomaduro/larastan": "^1.0.1|^2.5.1",
                 "orchestra/testbench-dusk": "^6.24|^7.21|^8.0",
-                "phpunit/phpunit": "^9.6|^10.0",
+                "phpunit/phpunit": "^9.6|^10.1",
                 "predis/predis": "^1.1.9|^2.0"
             },
             "suggest": {
@@ -1748,9 +1748,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/laravel/nova/tree/v4.23.0"
+                "source": "https://github.com/laravel/nova/tree/v4.24.4"
             },
-            "time": "2023-04-07T18:14:13+00:00"
+            "time": "2023-05-19T13:20:09+00:00"
         },
         {
             "name": "laravel/sanctum",
