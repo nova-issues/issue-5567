@@ -39,17 +39,13 @@ class TestAction extends Action
             Text::make(__('Test input'), 'test'),
             Text::make(__('Result'), 'result')
                 ->dependsOn('test', function (Text $field, NovaRequest $request, FormData $form) {
-                    $resourceIds = $request->query->all('resources');
-                    if (is_null($resourceIds)) {
-                        $resourceIds = $request->query->get('resourceId');
-                        if (is_null($resourceIds)) {
-                            $resourceIds = 'not present';
-                        }
+                    if ($request->allResourcesSelected()) {
+                        $field->setValue($form->get('test').' - All selected');
                     } else {
-                        $resourceIds = implode(', ', $resourceIds);
+                        $field->setValue($form->get('test').' - '.$request->selectedResourceIds()->join(', ', ' and '));
                     }
 
-                    $field->value = $form->get('test') . ' - ' . $resourceIds;
+                    $field->setValue($form->get('test'));
                 }),
         ];
     }
